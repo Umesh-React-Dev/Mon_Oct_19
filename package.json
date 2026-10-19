@@ -1,0 +1,31 @@
+{
+  "name": "mon_oct_19",
+  "version": "1.0.0",
+  "description": "TypeScript Express API with PostgreSQL CRUD and Swagger",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "prestart": "npm run build",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "@types/swagger-ui-express": "^4.1.8",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "pg": "^8.23.1",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
